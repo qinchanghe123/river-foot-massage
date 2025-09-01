@@ -97,7 +97,7 @@
 
       /* Home Section */
       .home {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(rgba(102, 126, 234, 0.7), rgba(118, 75, 162, 0.7)), url('2.avif');
         background-size: cover;
         background-position: center;
         height: 100vh;
@@ -753,7 +753,6 @@
   </head>
 
   <body>
-    <!-- Navbar -->
     <nav>
       <ul>
         <li><a href="#services">Services</a></li>
@@ -763,23 +762,19 @@
       </ul>
     </nav>
 
-    <!-- Home Section -->
     <section id="home" class="home">
       <div class="home-content">
         <h1>River Foot Massage</h1>
         <p class="spa-tagline">Your sanctuary of tranquility and rejuvenation</p>
       </div>
 
-      <!-- Call and Book Online Cards -->
       <div class="contact-buttons">
-        <!-- Call Card -->
         <div class="contact-card">
           <h3>📞 Call for Appointment</h3>
           <a href="tel:+1-219-513-9490" class="phone-number">219-513-9490</a>
           <p>Speak directly with our friendly staff to schedule your perfect massage experience within 30 minutes.</p>
         </div>
 
-        <!-- Book Online Card -->
         <div class="contact-card">
           <h3>💻 Book Online</h3>
           <button class="book-button" onclick="showBookingForm()">Schedule Now</button>
@@ -787,9 +782,8 @@
         </div>
       </div>
 
-      <!-- Booking Form (Initially Hidden) -->
       <div id="bookingForm" class="booking-form">
-        <button class="close-form" onclick="hideBookingForm()">&times;</button>
+        <button class="close-form" onclick="hideBookingForm()">×</button>
         <h3>Schedule Your Visit</h3>
         <form onsubmit="submitBooking(event)">
           <div class="form-row">
@@ -840,12 +834,17 @@
             <label for="service">Preferred Service</label>
             <select id="service" name="service">
               <option value="">Select a Service</option>
-              <option value="Full Body Massage (Swedish/Deep Tissue) - 60min">Full Body Massage (60min) - $40</option>
-              <option value="Full Body Massage (Swedish/Deep Tissue) - 90min">Full Body Massage (90min) - $60</option>
-              <option value="Combo Special (Body+Foot) - 60min">Combo Special (Body+Foot) 60min - $40</option>
-              <option value="Combo Special (Body+Foot) - 90min">Combo Special (Body+Foot) 90min - $60</option>
-              <option value="Foot Massage (Head+Arm+Foot+Back) - 60min">Foot Massage (Head+Arm+Foot+Back) 60min - $40</option>
-              <option value="Foot Massage (Head+Arm+Foot+Back) - 90min">Foot Massage (Head+Arm+Foot+Back) 90min - $60</option>
+              <option value="Full Body Massage (Swedish/Deep Tissue) - 30min">Full Body Massage (30min) - $50 Cash/$55 Card</option>
+              <option value="Full Body Massage (Swedish/Deep Tissue) - 1hr">Full Body Massage (1小时) - $40</option>
+              <option value="Full Body Massage (Swedish/Deep Tissue) - 90min">Full Body Massage (90分钟) - $60</option>
+              <option value="Combo Special (Body+Foot) - 1hr">Combo Special (Body+Foot) 1小时 - $40</option>
+              <option value="Combo Special (Body+Foot) - 90min">Combo Special (Body+Foot) 90分钟 - $60</option>
+              <option value="Foot Massage (cloth on) - 30min">Foot Massage (30min) - $35 Cash/$40 Card</option>
+              <option value="Foot Massage (Head+Arm+Foot+Back) - 1hr">Foot Massage (Head+Arm+Foot+Back) 1小时 - $40</option>
+              <option value="Foot Massage (Head+Arm+Foot+Back) - 90min">Foot Massage (Head+Arm+Foot+Back) 90分钟 - $60</option>
+              <option value="Chair Massage - 15min">Chair Massage (15min) - $20</option>
+              <option value="Chair Massage - 20min">Chair Massage (20min) - $30</option>
+              <option value="Chair Massage - 30min">Chair Massage (30min) - $40</option>
             </select>
           </div>
 
@@ -872,7 +871,6 @@
       </div>
     </section>
 
-    <!-- Services Section -->
     <section id="services">
       <h2>Our Massage Services</h2>
       <h4>Hover or tap for detailed pricing information</h4>
@@ -883,6 +881,7 @@
             Choose between Swedish relaxation or Deep Tissue therapy massage to target your specific needs and preferences.
           </p>
           <div class="price-wrapper">
+            <h4>30 min: $50 Cash / $55 Card</h4>
             <h4>1小时: $40</h4>
             <h4>90分钟: $60</h4>
           </div>
@@ -905,8 +904,9 @@
             Our signature foot massage with cloth on, or comprehensive treatment including Head, Arm, Foot and Back massage.
           </p>
           <div class="price-wrapper">
-            <h4>1小时: $40</h4>
-            <h4>90分钟: $60</h4>
+            <h4>30 min (cloth on): $35 Cash / $40 Card</h4>
+            <h4>1小时 (Head+Arm+Foot+Back): $40</h4>
+            <h4>90分钟 (Head+Arm+Foot+Back): $60</h4>
           </div>
         </div>
 
@@ -916,14 +916,14 @@
             Quick and convenient chair massage perfect for targeting neck, shoulders, and back tension during your busy day.
           </p>
           <div class="price-wrapper">
-            <h4>1小时: $40</h4>
-            <h4>90分钟: $60</h4>
+            <h4>15 min: $20</h4>
+            <h4>20 min: $30</h4>
+            <h4>30 min: $40</h4>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Gallery Section -->
     <section id="gallery">
       <div class="gallery-container">
         <h2>Our Peaceful Environment</h2>
@@ -932,21 +932,21 @@
         <div class="carousel-container">
           <div class="carousel-track" id="carouselTrack">
             <div class="carousel-slide">
-              <img src="https://placehold.co/800x400/a2b9bc/FFFFFF?text=Spa+View+1" alt="Peaceful environment 1">
+              <img src="1.jpg" alt="Peaceful environment 1">
             </div>
             <div class="carousel-slide">
-              <img src="https://placehold.co/800x400/b2ad7f/FFFFFF?text=Spa+View+2" alt="Peaceful environment 2">
+              <img src="2.jpg" alt="Peaceful environment 2">
             </div>
             <div class="carousel-slide">
-              <img src="https://placehold.co/800x400/878f99/FFFFFF?text=Spa+View+3" alt="Peaceful environment 3">
+              <img src="3.jpg" alt="Peaceful environment 3">
             </div>
             <div class="carousel-slide">
-              <img src="https://placehold.co/800x400/6b73ff/FFFFFF?text=Spa+View+4" alt="Peaceful environment 4">
+              <img src="4.jpg" alt="Peaceful environment 4">
             </div>
           </div>
           
-          <button class="carousel-nav carousel-prev" onclick="changeSlide(-1)">&#10094;</button>
-          <button class="carousel-nav carousel-next" onclick="changeSlide(1)">&#10095;</button>
+          <button class="carousel-nav carousel-prev" onclick="changeSlide(-1)">❮</button>
+          <button class="carousel-nav carousel-next" onclick="changeSlide(1)">❯</button>
           
           <div class="carousel-indicators">
             <span class="carousel-dot active" onclick="currentSlide(1)"></span>
@@ -960,7 +960,6 @@
 
 
 
-    <!-- Specials Section -->
     <section id="specials">
       <h2>Current Specials</h2>
       <h4>Limited time offers for new and returning clients</h4>
@@ -1003,7 +1002,6 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact">
       <h2>Visit Us Today</h2>
       <h4>Schedule your appointment and experience the difference</h4>
@@ -1030,9 +1028,8 @@
       </div>
     </section>
 
-    <!-- Footer -->
     <footer>
-      <p>&copy; 2025 River Foot Massage. All rights reserved.</p>
+      <p>© 2025 River Foot Massage. All rights reserved.</p>
       <p>Experience tranquility • Professional care • Your wellness journey starts here</p>
     </footer>
 
