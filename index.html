@@ -97,9 +97,10 @@
 
       /* Home Section */
       .home {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.8) 100%), url('2.avif');
         background-size: cover;
         background-position: center;
+        background-attachment: fixed;
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -840,14 +841,14 @@
             <label for="service">Preferred Service</label>
             <select id="service" name="service">
               <option value="">Select a Service</option>
-              <option value="Full Body Massage (Swedish/Deep Tissue) - 30min">Full Body Massage (30min) - $50 Cash/$55 Card</option>
-              <option value="Full Body Massage (Swedish/Deep Tissue) - 60min">Full Body Massage (60min) - $70 Cash/$75 Card</option>
-              <option value="Full Body Massage (Swedish/Deep Tissue) - 90min">Full Body Massage (90min) - $100 Cash/$105 Card</option>
-              <option value="Combo Special (Body+Foot) - 60min">Combo Special (Body+Foot) 60min - $70 Cash/$75 Card</option>
-              <option value="Combo Special (Body+Foot) - 90min">Combo Special (Body+Foot) 90min - $100 Cash/$105 Card</option>
-              <option value="Foot Massage (cloth on) - 30min">Foot Massage (30min) - $35 Cash/$40 Card</option>
-              <option value="Foot Massage (Head+Arm+Foot+Back) - 60min">Foot Massage (Head+Arm+Foot+Back) 60min - $60 Cash/$65 Card</option>
-              <option value="Foot Massage (Head+Arm+Foot+Back) - 90min">Foot Massage (Head+Arm+Foot+Back) 90min - $90 Cash/$95 Card</option>
+              <option value="Full Body Massage (Swedish/Deep Tissue) - 30min">Full Body Massage (30min) - $50</option>
+              <option value="Full Body Massage (Swedish/Deep Tissue) - 60min">Full Body Massage (60min) - $40</option>
+              <option value="Full Body Massage (Swedish/Deep Tissue) - 90min">Full Body Massage (90min) - $60</option>
+              <option value="Combo Special (Body+Foot) - 60min">Combo Special (Body+Foot) 60min - $40</option>
+              <option value="Combo Special (Body+Foot) - 90min">Combo Special (Body+Foot) 90min - $60</option>
+              <option value="Foot Massage (cloth on) - 30min">Foot Massage (30min) - $35</option>
+              <option value="Foot Massage (Head+Arm+Foot+Back) - 60min">Foot Massage (Head+Arm+Foot+Back) 60min - $40</option>
+              <option value="Foot Massage (Head+Arm+Foot+Back) - 90min">Foot Massage (Head+Arm+Foot+Back) 90min - $60</option>
               <option value="Chair Massage - 15min">Chair Massage (15min) - $20</option>
               <option value="Chair Massage - 20min">Chair Massage (20min) - $30</option>
               <option value="Chair Massage - 30min">Chair Massage (30min) - $40</option>
@@ -888,9 +889,9 @@
             Choose between Swedish relaxation or Deep Tissue therapy massage to target your specific needs and preferences.
           </p>
           <div class="price-wrapper">
-            <h4>30 min: $50 Cash / $55 Card</h4>
-            <h4>60 min: $70 Cash / $75 Card</h4>
-            <h4>90 min: $100 Cash / $105 Card</h4>
+            <h4>30 min: $50</h4>
+            <h4>60 min: $40</h4>
+            <h4>90 min: $60</h4>
           </div>
         </div>
 
@@ -900,8 +901,8 @@
             Get the best of both worlds with our combination massage that includes both body and foot massage for complete relaxation.
           </p>
           <div class="price-wrapper">
-            <h4>60 min: $70 Cash / $75 Card</h4>
-            <h4>90 min: $100 Cash / $105 Card</h4>
+            <h4>60 min: $40</h4>
+            <h4>90 min: $60</h4>
           </div>
         </div>
 
@@ -910,286 +911,3 @@
           <p>
             Our signature foot massage with cloth on, or comprehensive treatment including Head, Arm, Foot and Back massage.
           </p>
-          <div class="price-wrapper">
-            <h4>30 min (cloth on): $35 Cash / $40 Card</h4>
-            <h4>60 min (Head+Arm+Foot+Back): $60 Cash / $65 Card</h4>
-            <h4>90 min (Head+Arm+Foot+Back): $90 Cash / $95 Card</h4>
-          </div>
-        </div>
-
-        <div class="service-box">
-          <h3>Chair Massage</h3>
-          <p>
-            Quick and convenient chair massage perfect for targeting neck, shoulders, and back tension during your busy day.
-          </p>
-          <div class="price-wrapper">
-            <h4>15 min: $20</h4>
-            <h4>20 min: $30</h4>
-            <h4>30 min: $40</h4>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery">
-      <div class="gallery-container">
-        <h2>Our Peaceful Environment</h2>
-        <h4>Experience the tranquil atmosphere of our spa</h4>
-        
-        <div class="carousel-container">
-          <div class="carousel-track" id="carouselTrack">
-            <div class="carousel-slide">
-              <img src="1.jpg" alt="Peaceful environment 1">
-            </div>
-            <div class="carousel-slide">
-              <img src="2.jpg" alt="Peaceful environment 2">
-            </div>
-            <div class="carousel-slide">
-              <img src="3.jpg" alt="Peaceful environment 3">
-            </div>
-            <div class="carousel-slide">
-              <img src="4.jpg" alt="Peaceful environment 4">
-            </div>
-          </div>
-          
-          <button class="carousel-nav carousel-prev" onclick="changeSlide(-1)">&#10094;</button>
-          <button class="carousel-nav carousel-next" onclick="changeSlide(1)">&#10095;</button>
-          
-          <div class="carousel-indicators">
-            <span class="carousel-dot active" onclick="currentSlide(1)"></span>
-            <span class="carousel-dot" onclick="currentSlide(2)"></span>
-            <span class="carousel-dot" onclick="currentSlide(3)"></span>
-            <span class="carousel-dot" onclick="currentSlide(4)"></span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-    <!-- Specials Section -->
-    <section id="specials">
-      <h2>Current Specials</h2>
-      <h4>Limited time offers for new and returning clients</h4>
-      <div class="services">
-        <div class="service-box">
-          <h3>First Visit Special</h3>
-          <p>
-            New clients enjoy 10% off their first service. Experience our exceptional care at a special introductory rate.
-          </p>
-          <div class="price-wrapper">
-            <h4>Valid for all services</h4>
-            <h4>Cannot be combined with other offers</h4>
-            <h4>Mention this special when booking</h4>
-          </div>
-        </div>
-
-        <div class="service-box">
-          <h3>Couples Package</h3>
-          <p>
-            Book side-by-side massages for you and your partner. Perfect for date nights, anniversaries, or simply relaxing together.
-          </p>
-          <div class="price-wrapper">
-            <h4>Available for all massage types</h4>
-            <h4>10% discount for both services</h4>
-            <h4>Advanced booking recommended</h4>
-          </div>
-        </div>
-
-        <div class="service-box">
-          <h3>Monthly Membership</h3>
-          <p>
-            Regular self-care made affordable. Enjoy discounted rates and priority booking with our membership program.
-          </p>
-          <div class="price-wrapper">
-            <h4>15% off all services</h4>
-            <h4>Priority booking</h4>
-            <h4>Transferable to family members</h4>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Visit Us Today</h2>
-      <h4>Schedule your appointment and experience the difference</h4>
-      
-      <div class="appointment-card">
-        <div class="appointment-map">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.2345!2d-87.4567!3d41.5678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDM0JzA0LjEiTiA4N8KwMjcnMjQuMSJX!5e0!3m2!1sen!2sus!4v1234567890123"
-            width="400" 
-            height="300" 
-            style="border:0; border-radius: 15px;" 
-            allowfullscreen="" 
-            loading="lazy">
-          </iframe>
-          
-          <div class="appointment-info">
-            <h3>📍 Location & Hours</h3>
-            <p><strong>Address:</strong> 8805 Indianapolis Blvd, Highland, IN 46322</p>
-            <p><strong>Phone:</strong> <a href="tel:+1-219-513-9490">219-513-9490</a></p>
-            <p><strong>Hours:</strong> 9:30am - 8:00pm</p>
-            <p><strong>Walk-ins Welcome</strong> (Appointments Recommended)</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2025 River Foot Massage. All rights reserved.</p>
-      <p>Experience tranquility • Professional care • Your wellness journey starts here</p>
-    </footer>
-
-    <script>
-      // Carousel Functionality
-      let currentSlideIndex = 0;
-      const totalSlides = 4;
-
-      function updateCarousel() {
-        const track = document.getElementById('carouselTrack');
-        const dots = document.querySelectorAll('.carousel-dot');
-        
-        track.style.transform = `translateX(-${currentSlideIndex * 100}%)`;
-        
-        dots.forEach((dot, index) => {
-          dot.classList.toggle('active', index === currentSlideIndex);
-        });
-      }
-
-      function changeSlide(direction) {
-        currentSlideIndex += direction;
-        
-        if (currentSlideIndex >= totalSlides) {
-          currentSlideIndex = 0;
-        } else if (currentSlideIndex < 0) {
-          currentSlideIndex = totalSlides - 1;
-        }
-        
-        updateCarousel();
-      }
-
-      function currentSlide(slideIndex) {
-        currentSlideIndex = slideIndex - 1;
-        updateCarousel();
-      }
-
-      // Auto-advance carousel every 5 seconds
-      setInterval(() => {
-        changeSlide(1);
-      }, 5000);
-
-      // Service box price display functionality
-      document.addEventListener('DOMContentLoaded', function() {
-        const serviceBoxes = document.querySelectorAll('.service-box');
-        
-        serviceBoxes.forEach(box => {
-          const priceWrapper = box.querySelector('.price-wrapper');
-          
-          box.addEventListener('mouseenter', () => {
-            priceWrapper.style.display = 'block';
-          });
-          
-          box.addEventListener('mouseleave', () => {
-            priceWrapper.style.display = 'none';
-          });
-          
-          // For mobile - toggle on tap
-          box.addEventListener('click', () => {
-            const isVisible = priceWrapper.style.display === 'block';
-            // Hide all other price wrappers
-            serviceBoxes.forEach(otherBox => {
-              if (otherBox !== box) {
-                otherBox.querySelector('.price-wrapper').style.display = 'none';
-              }
-            });
-            // Toggle current one
-            priceWrapper.style.display = isVisible ? 'none' : 'block';
-          });
-        });
-      });
-
-      // Booking Form Functions
-      function showBookingForm() {
-        const form = document.getElementById('bookingForm');
-        form.classList.add('active');
-        document.body.style.overflow = 'hidden';
-        
-        // Set minimum date to today
-        const today = new Date().toISOString().split('T')[0];
-        document.getElementById('date').min = today;
-      }
-
-      function hideBookingForm() {
-        const form = document.getElementById('bookingForm');
-        form.classList.remove('active');
-        document.body.style.overflow = 'auto';
-      }
-
-      function submitBooking(event) {
-        event.preventDefault();
-        
-        // Get form data
-        const formData = new FormData(event.target);
-        const bookingData = {};
-        
-        for (let [key, value] of formData.entries()) {
-          if (key === 'addons') {
-            // Handle multiple selections for addons
-            if (!bookingData[key]) bookingData[key] = [];
-            bookingData[key].push(value);
-          } else {
-            bookingData[key] = value;
-          }
-        }
-        
-        // Here you would typically send the data to your booking system
-        // For demo purposes, we'll show a confirmation
-        alert(`Thank you ${bookingData.firstName}! Your booking request has been submitted. We'll contact you at ${bookingData.phone} within 30 minutes to confirm your appointment.`);
-        
-        // Reset form and hide
-        event.target.reset();
-        hideBookingForm();
-      }
-
-      // Smooth scrolling for navigation links
-      document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute('href'));
-          if (target) {
-            target.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start'
-            });
-          }
-        });
-      });
-
-      // Close booking form when clicking outside
-      document.addEventListener('click', function(e) {
-        const form = document.getElementById('bookingForm');
-        const bookButton = document.querySelector('.book-button');
-        
-        if (form.classList.contains('active') && 
-            !form.contains(e.target) && 
-            !bookButton.contains(e.target)) {
-          hideBookingForm();
-        }
-      });
-
-      // Escape key to close booking form
-      document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape') {
-          const form = document.getElementById('bookingForm');
-          if (form.classList.contains('active')) {
-            hideBookingForm();
-          }
-        }
-      });
-    </script>
-  </body>
-</html>
